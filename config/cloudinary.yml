@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: iesespg
+  api_key: '827633931451892'
+  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: iesespg
+  api_key: '827633931451892'
+  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: iesespg
+  api_key: '827633931451892'
+  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  enhance_image_tag: true
+  static_image_support: false
