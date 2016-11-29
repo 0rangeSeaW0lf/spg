@@ -1,8 +1,8 @@
 section.hero.container-fluid
     width: 100vw
-    height: 100vh
+    height: calc(100vh - 100px)
     min-width: 100vw
-    min-height: 100vh
+    min-height: calc(100vh - 100px)
 
     padding: 0
     color: white
@@ -17,11 +17,28 @@ section.hero.container-fluid
     align-items: center
     justify-content: center
 
+nav.navbar.navbar-light
+    background-color: #b10e10
+    padding-bottom: 0
+    padding-top: 0
+    border-radius: 0
+
+a.navbar-brand
+    padding-top: 0
+    padding-bottom: 0
+
 @media (orientation: landscape)
     section.hero.container-fluid
         display: flex
         align-items: center
         justify-content: center
+        min-height: calc(100vh - 100px)
+        height: 100%
+
+@media (max-width: 768px) and (orientation: landscape)
+    section.hero.container-fluid
+        min-height: calc(100vh - 60px)
+        height: 100%
 
 @media (max-width: 576px) and (orientation: portrait)
     section.hero.container-fluid
@@ -30,8 +47,8 @@ section.hero.container-fluid
         -moz-background-size: cover
         -o-background-size: cover
         background-size: cover
-        height: 100%
-        min-height: 100vh
+        height: calc(100vh - 60px)
+        min-height: 100%
         padding: 20px 0
 
 @media (orientation: portrait)
@@ -41,3 +58,6 @@ section.hero.container-fluid
 @media (min-width: 992px)
     p
         font-size: 1.2em
+
+.navbar
+    z-index: 10000
