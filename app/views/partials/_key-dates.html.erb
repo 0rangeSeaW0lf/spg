@@ -1,11 +1,26 @@
 <section class="container dates">
-    <div class="row dates__wrapper">
-        <div class="col-xs-12 text-xs-center dates__header">
-            <h2 class="h1">Key Dates</h2>
-            <h6>Schools that competed at IESE Spring Games 2016:</h4>
+    <div class="row dates__header__wrapper">
+        <div class="col-xs-12 text-xs-center dates__header__content">
+            <h2 class="dates__header__title h1">Key Dates</h2>
+            <h6 class="dates__header__subtitle">Buy your early bird tickets now and save!<br>To be up to date with key dates, news, and happenings follow <%= link_to 'our facebook page', 'https://www.facebook.com/IESESpringGames2017/', target: '_blank', :class => 'dates__header__subtitle__link' %></h6>
         </div>
-        <div class="col-xs-12 dates__content">
-
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dates__content__registration early_bird open_date text-xs-center text-sm-left">
+            <h3 class="dates__content__registration__title">Tuesday 29th November 2016</h3>
+            <p class="dates__content__registration__info">Early bird registration opens!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dates__content__registration early_bird close_date text-xs-center text-sm-left">
+            <h3 class="dates__content__registration__title">Thursday 31st December 2016<br><span class="h5">(<%= distance_of_time_in_words(Time.now, Time.new(2017,01,01,00,00,00), include_seconds: false) %> from now)</span></h3>
+            <p class="dates__content__registration__info">Early bird registration offer closes (Happy New Year!)</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 dates__content__registration regular close_date text-xs-center text-sm-left">
+            <h3 class="dates__content__registration__title">Friday 17th March 2017<br><span class="h5">(<%= distance_of_time_in_words(Time.now, Time.new(2017,03,18,00,00,00), include_seconds: false) %> from now)</span></h3>
+            <p class="dates__content__registration__info">Final day of registration</p>
         </div>
     </div>
 </section>

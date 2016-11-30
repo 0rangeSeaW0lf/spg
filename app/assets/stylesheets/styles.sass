@@ -1,3 +1,5 @@
+$iese_color: #9e292b
+
 section.hero.container-fluid
     width: 100vw
     height: calc(100vh - 100px)
@@ -31,8 +33,14 @@ a.navbar-brand
     padding-top: 3.215em
     padding-bottom: 3.4375em
 
-h2.h1
-    color: #9e292b
+.wrapper__inner
+    padding-top: 1.5625em
+    padding-bottom: 1.71875em
+
+h2.h1,
+.dates__content__registration__title,
+.dates__header__subtitle__link
+    color: $iese_color
 
 @media (orientation: landscape)
     section.hero.container-fluid
@@ -71,3 +79,10 @@ h2.h1
 
 .navbar
     z-index: 10000
+
+.container-fluid.contact
+    color: #fff
+    background-color: $iese_color
+
+h2.contact__header__title.h1
+    color: #fff
