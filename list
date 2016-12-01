@@ -1,0 +1,14 @@
+<%= render :partial => 'partials/hero'%>
+<%= render :partial => 'partials/about-us'%>
+<%= render :partial => 'partials/sponsors'%>
+<!--<%= render :partial => 'partials/competitors'%>-->
+<!--<%= render :partial => 'partials/key-dates'%>-->
+<!--<%= render :partial => 'partials/team'%>-->
+<%= render :partial => 'partials/tickets'%>
+<!--<%= render :partial => 'partials/gallery'%>-->
+<%= render :partial => 'partials/agenda'%>
+<%= render :partial => 'partials/nightlife'%>
+<!--<%= render :partial => 'partials/barcelona'%>-->
+<!--<%= render :partial => 'partials/gmap'%>-->
+<%= render :partial => 'partials/contact'%>
+<%= render :partial => 'partials/footer'%>
