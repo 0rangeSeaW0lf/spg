@@ -1,19 +1,19 @@
 ---
 development:
-  cloud_name: iesespg
-  api_key: '827633931451892'
-  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  cloud_name: dcxb6aehjk
+  api_key: '491482618948264'
+  api_secret: zaYfZpfrJPhxSWINkukFZSA_x0w
   enhance_image_tag: true
   static_image_support: false
 production:
-  cloud_name: iesespg
-  api_key: '827633931451892'
-  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  cloud_name: dcxb6aehjk
+  api_key: '491482618948264'
+  api_secret: zaYfZpfrJPhxSWINkukFZSA_x0w
   enhance_image_tag: true
   static_image_support: true
 test:
-  cloud_name: iesespg
-  api_key: '827633931451892'
-  api_secret: epbruBLzcvT9V-CQlppOPLeSW3M
+  cloud_name: dcxb6aehjk
+  api_key: '491482618948264'
+  api_secret: zaYfZpfrJPhxSWINkukFZSA_x0w
   enhance_image_tag: true
   static_image_support: false
