@@ -7,72 +7,91 @@
             </picture>
         </div>
         <div class="col-xs-12 col-sm-9">
-            <div class="container-fluid px-0">
-                <div class="row">
-                    <div class="col-xs-12 text-xs-center text-md-left">
-                        <h2 class="iese mb-3 font-weight-bold">Spring Games by Day</h2>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,h_200,q_auto,w_200/v1480763615/7_Fees_Sub_1_qurblj.png" media="(min-width: 768px)">
-                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,h_200,q_auto,w_200/c_scale,q_auto,w_100/v1480763615/7_Fees_Sub_1_qurblj.png" class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 text-xs-center text-md-left">
-                                <h4 class="iese mb-0 font-weight-bold">Athlete General Admission</h4>
-                                <% if @today < @early_bird %>
-                                    <h5 class="iese text-uppercase">Eary bird price!</h5>
-                                    <p>Price will go up to <span class="font-weight-bold">€130</span> in <%= distance_of_time_in_words(@early_bird, @today)%></span></p>
-                                    <p></p>
-                                <% else %>
-                                    <h5 class="iese text-uppercase">Regular Price</h5>
-                                <% end %>
-                                <br>
-                                <p>3 days of sporting events, access to all three parties, and dinner on Friday and Saturday mixers with other MBA Schools.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-1">
-                                <% if @today < @early_bird %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€115</h4>
-                                <% else %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€130</h4>
-                                <% end %>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="http://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,w_200/v1480763613/7_Fees_Sub_2_jurcdr.png" media="(min-width: 768px)">
-                                    <img src="http://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,w_200/c_scale,q_auto,w_100/v1480763613/7_Fees_Sub_2_jurcdr.png"class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-sm-8 text-xs-center text-md-left">
-                                <h4 class="iese mb-0 font-weight-bold">Spectator General Admission</h4>
-                                <% if @today < @early_bird %>
-                                    <h5 class="iese text-uppercase">Eary bird price!</h5>
-                                    <p>Price will go up to <span class="font-weight-bold">€95</span> in <%= distance_of_time_in_words(@early_bird, @today)%></span></p>
-                                    <p></p>
-                                <% else %>
-                                    <h5 class="iese text-uppercase">Regular Price</h5>
-                                <% end %>
-                                <br>
-                                <p>Cheer on your team! Includes spectator pass to 3 days of sporting events, access to all three parties, and dinner at Saturday party with other MBA Schools.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-1">
-                                <% if @today < @early_bird %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€80</h4>
-                                <% else %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€95</h4>
-                                <% end %>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-xs-12 text-xs-center text-md-left">
+                    <h2 class="iese font-weight-bold mb-3">Spring Games by Day</h2>
                 </div>
-                <div class="row">
-                    <div class="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2">
-                        <%= link_to 'Buy Now', 'https://www.picatic.com/iesespringgames', :class => 'btn btn-success btn-lg text-uppercase btn-block' %>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 mb-2 text-xs-center text-md-left">
+                    <h5>By day, compete against your MBA rivals at over 15 sports. You’ll spend Friday on the beach, trying to take down the IESE beach bums at:</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 pr-0">
+                    <picture>
+                        <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_250/c_scale,q_auto,w_200/v1480763614/11_Day_Sub_1_segptw.png" media="(min-width: 768px)">
+                        <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_250/c_scale,q_auto,w_100/v1480763614/11_Day_Sub_1_segptw.png" class="img-fluid mx-auto d-block">
+                    </picture>
+                </div>
+                <div class="col-xs-8 mb-2">
+                    <ul class="hidden-sm-down">
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Beach Volleyball</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Beer Pong</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Beach Soccer</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Recreational Sailing</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">And more to come...</span></li>
+                    </ul>
+                    <span class="hidden-sm-up">Beach volleyball, beer pong, beach soccer, recreational sailing and more to come...</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 mb-2 text-xs-center text-md-left">
+                    <h5>Saturday and Sunday are spent on the field, battling for your school’s honour at sports including:</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 pr-0">
+                    <picture>
+                        <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,q_auto,w_270/c_scale,q_auto,w_200/v1480763614/11_Day_Sub_2_i65qrg.png" media="(min-width: 768px)">
+                        <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,q_auto,w_270/c_scale,q_auto,w_100/v1480763614/11_Day_Sub_2_i65qrg.png" class="img-fluid mx-auto d-block">
+                    </picture>
+                </div>
+                <div class="col-xs-8 mb-1">
+                    <div class="row">
+                        <ul class="hidden-sm-down col-xs-6">
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Badminton</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Basketball</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Volleyball</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Cricket</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Paddle Tennis</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Rugby</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Sailing (Regatta)</span></li>
+                        </ul>
+                        <ul class="hidden-sm-down col-xs-6">
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Soccer</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Table Tennis</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Tennis</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Track & Field</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Ultimate Frisbee</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Salsa (at a club)</span></li>
+                            <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">And more...</span></li>
+                        </ul>
                     </div>
+                    <span class="hidden-sm-up">Badminton, basketball, volleyball, cricket, paddle tennis, rugby, sailing (regatta), soccer, table tennis, tennis, track & field, ultimate frisbee, salsa (competition conducted at the club) and more...</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 mb-2 text-xs-center text-md-left">
+                    <h5>And for supporters, there will be a whole host of sideline activities, including:</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 pr-0">
+                    <picture>
+                        <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,q_auto,w_270/c_scale,w_200/v1480763614/11_Day_Sub_3_pfoz9a.png" media="(min-width: 768px)">
+                        <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,q_auto,w_270/c_scale,w_100/v1480763614/11_Day_Sub_3_pfoz9a.png" class="img-fluid mx-auto d-block">
+                    </picture>
+                </div>
+                <div class="col-xs-8 mb-2">
+                    <ul class="hidden-sm-down">
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Live bands and DJs</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Beer gardens</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Obstacle courses</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Mini sports competitions</span></li>
+                        <li class="my-1 text-xs-center text-md-left"><span class="h5 font-weight-normal">Inflatable sports, minigolf, and whatever crazy things we can think of</span></li>
+                    </ul>
+                    <span class="hidden-sm-up">Live bands and DJs, beer gardens, obstacle courses, Mini sports competitions, inflatable sports, minigolf, and whatever crazy things we can think of</span>
                 </div>
             </div>
         </div>
