@@ -14,48 +14,9 @@
                         <h5 class="mb-3">Buy your early bird tickets now and save! To be up to date with key dates, news, and happenings follow <%= link_to 'our facebook page', 'https://www.facebook.com/IESESpringGames2017/', target: '_blank', :class => 'iese' %></h5>
                     </div>
                     <div class="col-xs-12">
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763614/4_Date_1_xvndwu.png" media="(min-width: 768px)">
-                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763614/4_Date_1_xvndwu.png" class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
-                                <div class="content">
-                                    <h4 class="iese mb-0 font-weight-bold">Tuesday 29th November 2016:</h4>
-                                    <p>Eary bird registration opens</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763614/4_Date_2_w2j9tk.png" media="(min-width: 768px)">
-                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763614/4_Date_2_w2j9tk.png"class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
-                                <div class="content">
-                                    <h4 class="iese mb-0 font-weight-bold">Wednesday 30th December 2016:</h4>
-                                    <p>Eary bird registration offer closes in <%= distance_of_time_in_words(@early_bird, @today, include_seconds: true)%></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763615/4_Date_3_zcdvl3.png" media="(min-width: 768px)">
-                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763615/4_Date_3_zcdvl3.png"class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
-                                <div class="content">
-                                    <h4 class="iese mb-0 font-weight-bold">Friday 17th March 2017:</h4>
-                                    <p>Registration closes in <%= distance_of_time_in_words(@end_registration, @today, include_seconds: true) %></p>
-                                </div>
-                            </div>
-                        </div>
+                        <%= render :partial => 'partials/key-dates-early-bird'%>
+                        <%= render :partial => 'partials/key-dates-regular'%>
+                        <%= render :partial => 'partials/key-dates-closure'%>
                     </div>
                 </div>
             </div>

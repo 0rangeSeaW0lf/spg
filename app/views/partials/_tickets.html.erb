@@ -16,60 +16,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,h_200,q_auto,w_200/v1480763615/7_Fees_Sub_1_qurblj.png" media="(min-width: 768px)">
-                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,h_200,q_auto,w_200/c_scale,q_auto,w_100/v1480763615/7_Fees_Sub_1_qurblj.png" class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-md-7 col-lg-8 text-xs-center text-md-left">
-                                <h4 class="iese mb-0 font-weight-bold">Athlete General Admission</h4>
-                                <% if @today < @early_bird %>
-                                    <h5 class="iese text-uppercase">Eary bird price!</h5>
-                                    <p>Price will go up to <span class="font-weight-bold">€130</span> in <%= distance_of_time_in_words(@early_bird, @today)%></span></p>
-                                    <p></p>
-                                <% else %>
-                                    <h5 class="iese text-uppercase">Regular Price</h5>
-                                <% end %>
-                                <br>
-                                <p>3 days of sporting events, access to all three parties, and dinner on Friday and Saturday mixers with other MBA Schools.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-1">
-                                <% if @today < @early_bird %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€115</h4>
-                                <% else %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€130</h4>
-                                <% end %>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-xs-12 col-sm-3 mb-1">
-                                <picture>
-                                    <source srcset="http://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,w_200/v1480763613/7_Fees_Sub_2_jurcdr.png" media="(min-width: 768px)">
-                                    <img src="http://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,w_200/c_scale,q_auto,w_100/v1480763613/7_Fees_Sub_2_jurcdr.png"class="img-fluid mx-auto d-block">
-                                </picture>
-                            </div>
-                            <div class="col-xs-12 col-md-7 col-lg-8 text-xs-center text-md-left">
-                                <h4 class="iese mb-0 font-weight-bold">Spectator General Admission</h4>
-                                <% if @today < @early_bird %>
-                                    <h5 class="iese text-uppercase">Eary bird price!</h5>
-                                    <p>Price will go up to <span class="font-weight-bold">€95</span> in <%= distance_of_time_in_words(@early_bird, @today)%></span></p>
-                                    <p></p>
-                                <% else %>
-                                    <h5 class="iese text-uppercase">Regular Price</h5>
-                                <% end %>
-                                <br>
-                                <p>Cheer on your team! Includes spectator pass to 3 days of sporting events, access to all three parties, and dinner at Saturday party with other MBA Schools.</p>
-                            </div>
-                            <div class="col-xs-12 col-sm-1">
-                                <% if @today < @early_bird %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€80</h4>
-                                <% else %>
-                                    <h4 class="iese font-weight-bold text-xs-center text-md-left">€95</h4>
-                                <% end %>
-                            </div>
-                        </div>
+                        <%= render :partial => 'partials/tickets-athlete' %>
+                        <%= render :partial => 'partials/tickets-spectator' %>
                     </div>
                 </div>
                 <div class="row">
