@@ -1,26 +1,58 @@
-<section class="container dates">
-    <div class="row dates__header__wrapper">
-        <div class="col-xs-12 text-xs-center dates__header__content">
-            <h2 class="dates__header__title h1">Key Dates</h2>
-            <h6 class="dates__header__subtitle">Buy your early bird tickets now and save!<br>To be up to date with key dates, news, and happenings follow <%= link_to 'our facebook page', 'https://www.facebook.com/IESESpringGames2017/', target: '_blank', :class => 'dates__header__subtitle__link' %></h6>
-        </div>
-    </div>
+<section class="container mb-3">
     <div class="row">
-        <div class="col-xs-12 dates__content__registration early_bird open_date text-xs-center text-sm-left">
-            <h3 class="dates__content__registration__title">Tuesday 29th November 2016</h3>
-            <p class="dates__content__registration__info">Early bird registration opens!</p>
+        <div class="col-xs-12 col-sm-3 pr-0 mb-1">
+            <picture>
+                <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_scale,q_auto,w_250/v1480763614/3_Key_Dates_f59qog.png" media="(min-width: 768px)">
+                <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_scale,q_auto,w_150/v1480763614/3_Key_Dates_f59qog.png" class="img-fluid mx-auto d-block">
+            </picture>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 dates__content__registration early_bird close_date text-xs-center text-sm-left">
-            <h3 class="dates__content__registration__title">Thursday 31st December 2016<br><span class="h5">(<%= distance_of_time_in_words(Time.now, Time.new(2017,01,01,00,00,00), include_seconds: false) %> from now)</span></h3>
-            <p class="dates__content__registration__info">Early bird registration offer closes (Happy New Year!)</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 dates__content__registration regular close_date text-xs-center text-sm-left">
-            <h3 class="dates__content__registration__title">Friday 17th March 2017<br><span class="h5">(<%= distance_of_time_in_words(Time.now, Time.new(2017,03,18,00,00,00), include_seconds: false) %> from now)</span></h3>
-            <p class="dates__content__registration__info">Final day of registration</p>
+        <div class="col-xs-12 col-sm-9">
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="col-xs-12 text-xs-center text-md-left">
+                        <h2 class="iese">Key Dates</h2>
+                        <h6 class="mb-3">Buy your early bird tickets now and save! To be up to date with key dates, news, and happenings follow <%= link_to 'our facebook page', 'https://www.facebook.com/IESESpringGames2017/', target: '_blank', :class => 'iese' %></h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row mb-2">
+                            <div class="col-xs-12 col-sm-3 mb-1">
+                                <picture>
+                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763614/4_Date_1_xvndwu.png" media="(min-width: 768px)">
+                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763614/4_Date_1_xvndwu.png" class="img-fluid mx-auto d-block">
+                                </picture>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left">
+                                <h6 class="iese mb-0 font-weight-bold">Tuesday 29th November 2016:</h6>
+                                <p>Eary bird registration opens!</p>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-xs-12 col-sm-3 mb-1">
+                                <picture>
+                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763614/4_Date_2_w2j9tk.png" media="(min-width: 768px)">
+                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763614/4_Date_2_w2j9tk.png"class="img-fluid mx-auto d-block">
+                                </picture>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left">
+                                <h6 class="iese mb-0 font-weight-bold">Wednesday 30th December 2016:</h6>
+                                <p>Eary bird registration offer closes</p>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-xs-12 col-sm-3 mb-1">
+                                <picture>
+                                    <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_160/v1480763615/4_Date_3_zcdvl3.png" media="(min-width: 768px)">
+                                    <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_crop,g_center,q_auto,w_220/c_scale,q_auto,w_110/v1480763615/4_Date_3_zcdvl3.png"class="img-fluid mx-auto d-block">
+                                </picture>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 text-xs-center text-md-left">
+                                <h6 class="iese mb-0 font-weight-bold">Friday 17th March 2017:</h6>
+                                <p>Final day of registration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
