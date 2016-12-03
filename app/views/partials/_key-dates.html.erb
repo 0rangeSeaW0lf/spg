@@ -24,7 +24,7 @@
                             <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
                                 <div class="content">
                                     <h4 class="iese mb-0 font-weight-bold">Tuesday 29th November 2016:</h4>
-                                    <p>Eary bird registration opens!</p>
+                                    <p>Eary bird registration opens</p>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                             <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
                                 <div class="content">
                                     <h4 class="iese mb-0 font-weight-bold">Wednesday 30th December 2016:</h4>
-                                    <p>Eary bird registration offer closes</p>
+                                    <p>Eary bird registration offer closes in <%= distance_of_time_in_words(@early_bird, @today, include_seconds: true)%></p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                             <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
                                 <div class="content">
                                     <h4 class="iese mb-0 font-weight-bold">Friday 17th March 2017:</h4>
-                                    <p>Final day of registration</p>
+                                    <p>Registration closes in <%= distance_of_time_in_words(@end_registration, @today, include_seconds: true) %></p>
                                 </div>
                             </div>
                         </div>
