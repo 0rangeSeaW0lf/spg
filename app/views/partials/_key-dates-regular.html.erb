@@ -7,11 +7,11 @@
     </div>
     <div class="col-xs-12 col-sm-9 text-xs-center text-md-left content-wrapper">
         <div class="content">
-            <h4 class="iese mb-0 font-weight-bold">Wednesday 30th December 2016:</h4>
+            <h4 class="iese mb-0 font-weight-bold">Friday 30th December 2016:</h4>
             <% if @today < @early_bird %>
                 <p>Early bird registration offer closes in <%= distance_of_time_in_words(@early_bird, @today, include_seconds: true)%></p>
             <% else %>
-                <p>Early bird registration offer closed</p>
+                <p>Early bird registration offer is closed</p>
             <% end %>
         </div>
     </div>
