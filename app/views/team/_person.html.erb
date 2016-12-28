@@ -9,7 +9,7 @@
             <p class="iese mb-0 h5"><strong><%= given_name %> <%= surname %></strong></p>
             <p class="mb-0 h6"><%= nationality %></p>
             <p class="h6"><%= sport %></p>
-            <% email = "#{ given_name }.#{ surname }@iese.net" if email = "" %>
+            <% email = "#{ given_name }.#{ surname }@iese.net" if email.empty? %>
             <%= link_to "Contact #{ given_name }", "mailto:#{ email.downcase }? subject=%20IESE%20Spring%20Games:%20(Write%20a%20subject%20here)", :class => 'h6 iese' %>
         </div>
     </div>
