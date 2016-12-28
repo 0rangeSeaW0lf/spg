@@ -1,11 +1,21 @@
-<section class="container team">
-    <div class="row team__wrapper">
-        <div class="col-xs-12 text-xs-center team__header">
-            <h2 class="h1">Your IESE Spring Games Team</h2>
-            <h6>Schools that competed at IESE Spring Games 2016:</h4>
+<section class="container agenda wrapper" id="tean">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 pr-0 mb-1">
+            <picture>
+                <source srcset="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_scale,q_auto,w_250/v1480763615/5_Team_wpt364.png" media="(min-width: 768px)">
+                <img src="https://res.cloudinary.com/dcxb6aehjk/image/upload/c_scale,q_auto,w_150/v1480763615/5_Team_wpt364.png" class="img-fluid mx-auto d-block">
+            </picture>
         </div>
-        <div class="col-xs-12 team__content">
-            <%= render :partial => 'team/presidents'%>
+        <div class="col-xs-12 col-sm-9">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center text-md-left">
+                    <h2 class="iese font-weight-bold">Your IESE Spring Games Team</h2>
+                    <h5 class="mb-3">We're here to help! Meet the Spring Games Executive Team, and feel free to get in touch with any question</h5>
+                </div>
+            </div>
+            <%= render :partial => 'team/presidents' %>
+            <%= render :partial => 'team/schools' %>
+            <%= render :partial => 'team/fun' %>
         </div>
     </div>
 </section>
