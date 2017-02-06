@@ -1,3 +1,5 @@
+/* globals $, google */
+
 var map;
 
 function initMap() {
@@ -25,7 +27,7 @@ function initMap() {
         ['Platja Nova Icaria', 41.3876657, 2.1990288]
     ];
 
-    for (var i = 0, len = markers.length; i < markers.length; i++) {
+    for (var i = 0, len = markers.length; i < len; i++) {
         var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
         bounds.extend(position);
         marker = new google.maps.Marker({
@@ -35,3 +37,10 @@ function initMap() {
         });
     }
 }
+
+$( "#about-button" ).click(function( event ) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( "#about" ).offset().top
+    }, 1000);
+});
