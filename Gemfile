@@ -10,7 +10,7 @@ gem 'puma', '>= 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 5.0'
 # Use Bootstrap as front-end framework
-gem 'bootstrap', '>= 4.0.0.alpha5'
+gem 'bootstrap', '4.0.0.alpha5'
 # Bootstrap 4 dependency
 gem 'tether-rails'
 # Use Uglifier as compressor for JavaScript assets
